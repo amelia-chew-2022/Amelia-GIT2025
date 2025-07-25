@@ -1,0 +1,30 @@
+[
+    {
+      "number": "63207777",
+      "agency": "MOM",
+      "campaign": "CLFHS 2025",
+      "start_date": "2025-03-03",
+      "end_date": "2025-07-31",
+      "keywords": ["labour", "household", "survey"],
+      "link": "https://www.mom.gov.sg"
+    },
+    {
+      "number": "62238888",
+      "agency": "Singapore Airlines",
+      "campaign": "Payment hotline",
+      "start_date": "2020-01-01",
+      "end_date": "2050-12-31",
+      "keywords": ["flight", "payment", "booking"],
+      "link": "https://www.singaporeair.com"
+    },
+    {
+      "number": "65357677",
+      "agency": "OCBC",
+      "campaign": "Card Fraud/Replacement",
+      "start_date": "2020-01-01",
+      "end_date": "2050-12-31",
+      "keywords": ["card", "suspended", "fraud", "paynow"],
+      "link": "https://www.ocbc.com"
+    }
+  ]
+  

@@ -1,0 +1,58 @@
+# 📞 LegitCheck – Verify Official Campaign Numbers
+
+LegitCheck is a simple Streamlit app that helps users verify if a phone number is part of an official government or company outreach campaign. Inspired by real-world experiences with legitimate but suspicious-looking communications, the tool aims to provide peace of mind at moments of doubt.
+
+---
+
+## 🚀 Features
+
+- ✅ Check if a phone number is part of a known campaign (e.g. MOM surveys, OCBC card services, SIA payment lines)
+- 📆 Shows campaign period and agency name
+- ❓ Clear labels: Verified / Not Found
+- 🔗 External link to the official agency or company site for follow-up
+
+---
+
+## 🧱 File Structure
+GIT2025/
+├── app/
+│ ├── main.py # Streamlit app
+│ └── utils.py # Logic for matching and date validation
+├── data/
+│ └── campaigns.json # List of verified campaign numbers
+└── README.md # This file
+
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Create a virtual environment (recommended)
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+### 2. Install dependencies
+
+pip install streamlit
+
+
+### 3. Run the app
+From the root GIT2025/ directory:
+streamlit run app/main.py
+
+
+📋 Example Campaigns in campaigns.json
+63207777 → MOM CLFHS 2025 (Mar–Jul 2025)
+62238888 → Singapore Airlines payment line
+65357677 → OCBC card suspension hotline
+
+🔍 Future Ideas
+SMS message keyword scanner (e.g. “urgent”, “card suspended”)
+
+Fuzzy number matching (e.g. partial number input)
+
+Google Search or OpenAI API integration for company name lookup
+
+Educational tips: “Don’t share OTPs” / “Call the agency directly”
