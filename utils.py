@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 from serpapi import GoogleSearch
+import streamlit as st
 
 load_dotenv()  # Load SERPAPI_KEY from .env file
 
@@ -33,7 +34,7 @@ def google_check_company_number(phone_number):
     search = GoogleSearch({
         "q": formatted_number,
         "engine": "google",
-        "api_key": os.getenv("SERPAPI_KEY")
+        "api_key": st.secrets["SERPAPI_KEY"]  # read from Streamlit Secrets
     })
     results = search.get_dict()
     top_results = results.get("organic_results", [])
